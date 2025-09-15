@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input id="box" type="text" placeholder="Passcode">
+<button onclick="check()">Enter</button>
+<p id="msg"></p>
+
+<script>
+function check(){
+  const v = document.getElementById('box').value;
+  if(v==="friends") document.getElementById('msg').innerText="Unlocked!";
+  else document.getElementById('msg').innerText="Wrong!";
+}
+</script>
+</body>
+</html>
